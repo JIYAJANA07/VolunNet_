@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "idToken": "FIREBASE_ID_TOKEN_HERE"
+    }
+order: 4000

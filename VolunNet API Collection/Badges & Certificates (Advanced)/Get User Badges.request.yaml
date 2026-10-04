@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/badges/user/:userId"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+pathVariables:
+  userId: USER_ID
+order: 2000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/notifications/fcm-token"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "fcmToken": "SAMPLE_FCM_DEVICE_TOKEN"
+    }
+order: 1000

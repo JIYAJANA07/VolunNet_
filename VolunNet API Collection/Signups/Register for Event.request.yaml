@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/signups"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "eventId": "EVENT_ID"
+    }
+order: 1000

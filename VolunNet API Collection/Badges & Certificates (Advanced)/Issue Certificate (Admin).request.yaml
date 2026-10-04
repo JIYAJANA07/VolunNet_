@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/api/certificates"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{adminToken}}
+body:
+  type: text
+  content: |-
+    {
+      "userId": "USER_ID",
+      "eventId": "EVENT_ID",
+      "title": "Certificate of Excellence in Environmental Service",
+      "hoursLogged": 25
+    }
+order: 4000

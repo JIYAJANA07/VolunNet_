@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/notifications/send"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "eventId": "EVENT_ID",
+      "title": "Event Reminder",
+      "message": "Please remember to bring your volunteer badge tomorrow!"
+    }
+order: 3000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/api/events"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{adminToken}}
+body:
+  type: text
+  content: |-
+    {
+      "title": "Community Tree Plantation",
+      "description": "Planting trees in Central Park",
+      "location": "Central Park, Zone 4",
+      "date": "2026-11-10T09:00:00.000Z",
+      "volunteersNeeded": 15
+    }
+order: 3000

@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/hours"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "event": "EVENT_ID",
+      "hours": 4.5,
+      "description": "Helped organize supply stations"
+    }
+order: 1000

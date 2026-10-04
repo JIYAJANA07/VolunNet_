@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/events/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{adminToken}}
+pathVariables:
+  id: EVENT_ID
+body:
+  type: text
+  content: |-
+    {
+      "volunteersNeeded": 20
+    }
+order: 4000

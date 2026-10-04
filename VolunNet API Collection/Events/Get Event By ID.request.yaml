@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/events/:id"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+pathVariables:
+  id: EVENT_ID
+order: 2000

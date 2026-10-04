@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/signups/user/:userId"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+pathVariables:
+  userId: USER_ID
+order: 3000

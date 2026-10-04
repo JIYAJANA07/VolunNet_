@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/signups/:id"
+method: DELETE
+headers:
+  Authorization: Bearer {{token}}
+pathVariables:
+  id: SIGNUP_ID
+order: 4000

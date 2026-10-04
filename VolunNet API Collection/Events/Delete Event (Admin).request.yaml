@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/events/:id"
+method: DELETE
+headers:
+  Authorization: Bearer {{adminToken}}
+pathVariables:
+  id: EVENT_ID
+order: 5000
